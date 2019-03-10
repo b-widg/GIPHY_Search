@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: 1px red solid; */
+
+}
+html, body{
+    height: 100vh;
+}
+.grid-container{
+    display: grid;
+    background-color:  rgba(0,0,0,.70);
+    grid-template-columns: 15rem auto;
+    grid-template-rows: auto 1fr;
+    width: 100vw;
+    min-height: 100vh;
+    
+
+    
+}
+header{
+    display: inline-block;
+    background-color: #aaa;
+    overflow: hidden;
+    grid-column: 1 / 13;
+    grid-row: 1 / 2;
+    border-bottom: 5px solid rgba(0,0,0,.70);
+}
+
+h1{
+    display: inline-block;
+}
+form{
+    display: inline-block;
+}
+#search-input{
+    font-stretch: expanded;
+}
+.update-item{
+    max-height: 2rem;
+    vertical-align: bottom;
+}
+#search-btn, #clear-btn{
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+img:hover{
+    opacity: .5;
+}
+#search-container{
+    display: inline-block;
+}
+#search-input{
+    width: 20vw;
+    height: 2rem;
+    margin-left: 5vw;
+}
+#search-div-container{
+    background-color: #fff;
+    margin-top: 2px;
+    grid-column: 1 / 2;
+}
+
+#gif-container{
+    /* background-color: rgba(235,235,235,.9); */
+    /* background-color: rgba(0,0,0,.3); */
+    margin-top: 2px;
+    grid-column: 2 / 13;
+    grid-row-start: 2;
+    border-left: 5px solid rgba(0,0,0,.7);
+    /* min-height: 100vh; */
+    position: relative;
+    
+}
+.search-div{
+    padding: .25rem;
+    /* margin-top: .25rem; */
+    border-top: .2rem solid  rgba(0,0,0,.7);
+    /* border-bottom: .2rem solid black; */
+    background-color: rgba(0,0,255,.6);
+    max-width: 1fr;
+}
+.search-div:last-child{
+    border-bottom: .2rem solid  rgba(0,0,0,.7);
+}
+.search-div:hover{
+    background-color: rgba(0,0,255,.3);
+    cursor: pointer;
+}
+.search-div:active{
+    font-weight:bold;
+    padding: rgba(0,0,0,.7)
+}
+figure{
+    display: inline-block;
+    margin: 2px;
+    color: whitesmoke;
+}
+#gyphy-logo{
+    position: fixed;
+    bottom: .5rem;
+    right: .5rem;
+    z-index: 1;
+}

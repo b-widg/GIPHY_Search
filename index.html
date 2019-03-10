@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/scripts/javascript.js"></script>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>GIPHY Search</title>
+</head>
+<body onload="onLoad();">
+
+    
+<div class="grid-container">
+    
+    <img id="gyphy-logo" src="assets/GiphyLogos/Animated Logos/Badge/Poweredby_100px_Badge.gif" alt="Powered By GIPHY">
+    <header>
+
+        <h1>GIF Search</h1>
+        <span id="header-place-holder"></span>
+        <form>
+            <span id="search-span">
+                <input id="search-input" type="text" placeholder="Enter terms to create search buttons" class="update-item">
+                <img src="assets/images/add.png" alt="search" id="search-btn" class="update-item">
+                <img src="assets/images/delete.png" alt="delete" id="clear-btn" class="update-item">
+            </span>
+        </form>
+
+    </header>
+
+    <div id="search-div-container"></div>
+
+    <div id="gif-container">
+        
+    </div>
+</div>
+
+
+</body>
+</html>
