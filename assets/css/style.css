@@ -48,7 +48,10 @@ form{
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
-img:hover{
+#clear-btn:hover{
+    opacity: .5;
+}
+#search-btn:hover{
     opacity: .5;
 }
 #search-container{
